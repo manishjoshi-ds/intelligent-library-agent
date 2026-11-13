@@ -1,0 +1,12 @@
+{
+  "projectId": "intelligent-library-agent",
+  "appId": "1:183354125682:web:0074e981bae6617c74c1eb",
+  "apiKey": "AIzaSyA6-VdGjxeKb4Kekg3u9ehcAlGzewCfmUg",
+  "authDomain": "intelligent-library-agent.firebaseapp.com",
+  "firestoreDatabaseId": "ai-studio-intelligentlibra-d48baa16-f998-469b-9662-3dae14a5755c",
+  "storageBucket": "intelligent-library-agent.firebasestorage.app",
+  "messagingSenderId": "183354125682",
+  "measurementId": "",
+  "oAuthClientId": "183354125682-ds9cmtkqan5vmmmad1b7u1t8ibv99m2l.apps.googleusercontent.com",
+  "recaptchaSiteKey": ""
+}

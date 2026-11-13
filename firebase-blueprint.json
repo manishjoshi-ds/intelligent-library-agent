@@ -1,0 +1,99 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile with library clearance privileges and preferences.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "Firebase Auth user ID"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "User contact email"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Display name of the user"
+        },
+        "hasSpecialPermission": {
+          "type": "boolean",
+          "description": "Clearance to access restricted rare manuscripts archive"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Creation timestamp"
+        }
+      },
+      "required": ["uid", "email"]
+    },
+    "SavedRoute": {
+      "title": "SavedRoute",
+      "description": "A saved book search or collection mission route.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the saved route"
+        },
+        "userId": {
+          "type": "string",
+          "description": "Owner user UID"
+        },
+        "title": {
+          "type": "string",
+          "description": "Descriptive title for the saved route"
+        },
+        "algorithm": {
+          "type": "string",
+          "description": "Algorithm used: A*, BFS, DFS, or TSP-2Opt"
+        },
+        "startNode": {
+          "type": "string",
+          "description": "Start section of the route"
+        },
+        "goalOrCheckoutNode": {
+          "type": "string",
+          "description": "Goal shelf or checkout destination"
+        },
+        "path": {
+          "type": "array",
+          "description": "Ordered sequence of node IDs"
+        },
+        "totalCost": {
+          "type": "number",
+          "description": "Total route cost"
+        },
+        "totalDistanceMeters": {
+          "type": "number",
+          "description": "Physical distance in meters"
+        },
+        "totalTimeSeconds": {
+          "type": "number",
+          "description": "Estimated mission duration in seconds"
+        },
+        "bookTitles": {
+          "type": "array",
+          "description": "List of book titles included in this mission"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO timestamp when the route was saved"
+        }
+      },
+      "required": ["userId", "title", "algorithm", "path"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile and access permissions"
+    },
+    "/saved_routes/{routeId}": {
+      "schema": "SavedRoute",
+      "description": "Saved navigation routes and collection schedules"
+    }
+  }
+}

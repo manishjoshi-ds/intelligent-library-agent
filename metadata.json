@@ -1,0 +1,6 @@
+{
+  "name": "Intelligent Library Search & Book Collection Agent",
+  "description": "AI-powered library navigation and multi-book collection route optimizer using BFS, DFS, and A* classical search algorithms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

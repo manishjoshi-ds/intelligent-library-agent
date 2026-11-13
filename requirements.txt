@@ -1,0 +1,7 @@
+# Requirements for Intelligent Library Search and Book Collection Agent
+# Python 3.10+ required
+
+streamlit>=1.30.0
+networkx>=3.0
+matplotlib>=3.7.0
+pandas>=2.0.0
