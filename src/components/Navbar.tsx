@@ -11,7 +11,6 @@ import {
   GitCompare,
   Terminal,
   FileCode,
-  GraduationCap,
   Cloud,
   Save,
   LogIn,
@@ -50,7 +49,6 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'cloud', label: 'Cloud Manifests', icon: Cloud },
     { id: 'tests', label: 'Test Suite', icon: Terminal },
     { id: 'code', label: 'Python Source', icon: FileCode },
-    { id: 'viva', label: 'Viva PDF Dossier', icon: GraduationCap },
   ];
 
   return (
